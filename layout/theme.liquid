@@ -4,7 +4,7 @@
     class="shopify-design-mode"
   {% endif %}
   lang="{{ request.locale.iso_code }}"
->
+>{{ 'shopduras-base.css' | asset_url | stylesheet_tag }}
   <head>
     {%- if settings.favicon != blank -%}
       <link
